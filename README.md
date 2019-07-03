@@ -6,6 +6,14 @@ Using Provider for State Management
    1. Text Widget to display the current count
    2. Button Widget to increment count
    3. Button Widget to decrement count
+   
+   **Note: The Widget Tree is as follows**
+   1. MultiProvider - `main.dart`
+      1. Home - `home.dart`
+         1. Column Widget
+            1. Text - `text.dart`
+            2. ButtonAdd - `button_add.dart` 
+            3. ButtonSubtract - `button_subtract.dart`
 
 2. Create a Counter class - this will be our State `/lib/state/counter.dart`
    1. Add a getter and setter for the counter
