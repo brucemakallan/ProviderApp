@@ -1,6 +1,6 @@
 # Provider App - State Management
 
-Using Provider for State Management
+Using [Provider](https://pub.dev/packages/provider) for State Management
 
 1. Create a basic Flutter Application to increment / decrement a counter
    1. Text Widget to display the current count
@@ -45,13 +45,15 @@ Using Provider for State Management
 
 3. Wrap the entire App in `MultiProvider` then add a `ChangeNotifierProvider` to the list of providers.
    ```
+   import 'package:provider/provider.dart';
+   ...
    return MultiProvider(
       providers: [
         ChangeNotifierProvider<Counter>.value(
           value: Counter(),
         )
       ],
-      child: ...,
+      child: App,
     );
    ```
 
